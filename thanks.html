@@ -1,0 +1,40 @@
+itemCode.forEach(element => {
+        let row = document.createElement("tr");
+        td = document.createElement("td");
+        td.innerHTML = element; //populating item code
+        row.appendChild(td);
+        let total = 0;
+        outlets.forEach(outlet => {
+          let el = 0;
+          data.forEach(d => {
+            if (d.itemcode == element && d.outlet == outlet) {
+              total += parseInt(d.difference);
+              el = d.difference;
+              In = d.itemname;
+            }
+          });
+          console.log(el);
+          td = document.createElement("td");
+          td.innerHTML = el.toLocaleString("en-in");
+          td.classList.add("text-right");
+
+          var tdVal = el;
+          if (tdVal <= -1000) {
+            td.style="background: pink";
+          } else if (tdVal > -1000 && tdVal< -100) {
+            td.style="background: red";
+          } else if (tdVal > 0) {
+            td.style="background: green";
+          } else if (tdVal === 0) {
+            td.style="background: grey";
+          }
+      row.appendChild(td);
+    });
+
+    td = document.createElement("td");
+    td.innerHTML = In; //populating item name
+    td.classList.add("text-left");
+
+    row.insertBefore(td, row.children[1]);
+    tbody.appendChild(row);
+  });

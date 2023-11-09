@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>RV Index</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="icon" type="png" href="style/icon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+
+<body>
+  <style>
+    ul {
+      text-align: center;
+    }
+  </style>
+  <div id="dark">
+    <button onclick="myFunction()">   <i class="fas fa-sun"></i> Or <i class="fas fa-moon"></i></button>
+  </div>
+    
+
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">RV Index</a></h1>
+        </div>
+      </div>
+
+      
+
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="page.html">New RV's</a></li>
+          <li><a href="used.html">Used RV's</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+
+      <div class="sidebar">
+        <h1>More Images</h1>
+        <ul>
+          <li><a href="https://www.google.com/search?q=motorhomes&tbm=isch&hl=en&sa=X&ved=2ahUKEwjMl_S7yr3zAhUjgE4HHctVB9IQBXoECAEQUA&biw=1903&bih=937">Motor Home Images</a></li>
+          <li><a href="https://www.google.com/search?q=fifth+wheel+camper&tbm=isch&ved=2ahUKEwjV9JXNyr3zAhUinq0KHfYWDs4Q2-cCegQIABAA&oq=fifth+wheel+ca&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECAAQQ1C_CVj-FGCMGmgAcAB4AIABdYgBrwKSAQMyLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=-axhYZWULKK8tgX2rbjwDA&bih=937&biw=1903&hl=en">Fifth Wheel Images</a></li>
+          <li><a href="https://www.google.com/search?q=pop+up+camper&tbm=isch&ved=2ahUKEwiS5a3Pyr3zAhWGZq0KHUC0BHAQ2-cCegQIABAA&oq=pop+u&gs_lcp=CgNpbWcQARgAMgcIABCxAxBDMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMggIABCABBCxAzIECAAQQzIECAAQQzIECAAQQzoFCAAQgARQl60BWMezAWCyvAFoAHAAeACAAXqIAcQEkgEDMC41mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=_qxhYZLuEobNtQXA6JKABw&bih=937&biw=1903&hl=en">Pop-Up Images</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        
+        <h1 style="text-align: center;">Welcome to RV Index</h1>
+          
+        <p style="text-align: center;">A site designed to help you find the best priced RVs.
+          <br> There are many different options depending on your needs.
+        </p>
+        <p style="text-align: center;">
+        Motor Homes Class A-C <br>
+        Fifth Wheels <br>
+        Pop-Ups <br>
+        And More!
+      </p>
+        <p style="text-align: center;">Take a look at some of the options!</p>
+
+        <div>
+          <ul><img src="style/motor home.jpg" width="260" height="160"></ul>
+          <ul><img src="style/5th.jpg" width="260" height="160"> </ul>
+          <ul><img src="style/popup.png" width="260" height="160"></ul>
+        </div>
+
+
+      </div>
+    </div> 
+      <script>
+      function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+      </script>
+
+    <div id="footer">
+      <p><a href="index.html">Home </a><a href="page.html">Prices </a> <a href="contact.html">Contact Us</a></p>
+        
+    </div>
+  </div>
+
+  <script src="dark.js"></script>
+</body>
+</html>

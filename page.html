@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>RV Index - prices</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="icon" type="png" href="style/icon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <script src="scripts/newCampers.js" defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body onload="onload()">
+
+    <div id="dark">
+        <button onclick="myFunction()"> <i class="fas fa-sun"></i> Or <i class="fas fa-moon"></i></button>
+    </div>
+
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">RV Index</a></h1>
+
+                </div>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page.html">New RV's</a></li>
+                <li><a href="used.html">Used RV's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content2">
+            <h1>New RV's For Sale</h1>
+            <p id="campers"></p>
+
+            <!-- <div class="filters">
+
+                    <div>
+                      Sort by price:
+                      <select class="sort-order">
+                        <option value="">Select one</option>
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="products"></div> -->
+
+            <table class="table table-striped">
+                <tr class="bg-info">
+                    <th></th>
+                </tr>
+                <tbody id="myTable">
+                </tbody>
+            </table>
+        </div>
+
+        <script type="text/javascript" language="javascript" src="fifth.json"></script>
+        <script type="text/javascript">
+            //dark mode function
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <div id="footer">
+
+            <p><a href="index.html">Home </a> <a href="page.html">Prices </a> <a href="contact.html">Contact Us</a></p>
+
+        </div>
+    </div>
+    <script src="dark.js"></script>
+</body></html>
